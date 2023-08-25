@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>  
+<style>                                 /* POSITION IN CSS */
+    img{
+        margin:20px;
+    }
+    div{
+        border: 1px solid black;
+    }
+    .image1{
+       position: relative;/* u can use left ,right ,top and bottom using this */
+        top: 100px; 
+    }
+    .image2{
+        position: absolute; /* it overlaps the image saves space. and if left/right/bottom/top is provided then and then only it will show*/
+        left:200px;
+        top: 350px;
+        right:450px;
+        bottom:100px;
+    }
+    .image4{
+        position: fixed; /*it will make image fix at a certain position*/ 
+    }
+    .image3{
+        position:sticky;   /* it will be stick at that position .but u have to mention top/left/bottom/right attribute for it */
+        top:100px;
+    }
+    .container{
+        position: relative;
+        background-color: beige;
+        height:8000px;     /* scroll the page 3rd image will not change position*/
+    }
+    .box{
+        background-color: aquamarine ;   /* by using this we understand than when next block/parent comes it will not stay sticky*/
+        height:5000px;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <img src="img1.jpeg"
+          alt="poster 1"
+          width="300px"
+          height="300px"
+          class="image1"
+
+         />
+
+         <img src="img2.jpeg"
+          alt="poster 2"
+          width="300px"
+          height="300px"
+          class="image2"
+         />
+
+         <img src="img3.jpeg"
+         alt="poster 3"
+         width="300px"
+         height="300px"
+         class="image3"
+        />
+
+        <img src="img4.jpeg"
+        alt="poster 4"
+        width="300px"
+        height="300px"
+        class="image4"
+       />
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>

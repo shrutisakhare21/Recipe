@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            height:650px;
+            border: 2px solid;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: bisque;
+            width:350px;
+            margin:5px;
+            padding:5px;
+            border:2px;
+            /*box-shadow :20px -60px black;     x ,y ,color*/
+            /*box-shadow:20px 50px 20px brown;   x ,y ,blur-radius, color*/
+            /*box-shadow: 20px 50px 10px 5px red;  x,y,blur-radius,spread-radius,colors*/
+           /* box-shadow:inset 20px 50px 10px 5px red;   inset is used for adding shadow inside the box*/
+            box-shadow:20px 30px brown,30px 20px black;  /* u can use 2 color shadows using comma*/
+            text-shadow: 2px 4px 2px black,2px 3px 4px red , 2px 3px 4px green;  /* u ll see a shadow at texts */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+        <img src="img4.jpeg " height="150px" width="150px"/>
+        <h2>WELCOME JII</h2> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, itaque quidem dolorem soluta magnam labore incidunt nam ea cum voluptatem beatae doloribus blanditiis reprehenderit optio.</p>
+       </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">  <!-- THIS IS CONTINUED FROM 16 IE NEXT PART IT IS-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+                                  
+   <style>
+    .container{
+       
+        border: 5px solid black;
+        margin:2px;
+        padding:2px;
+        background-color: antiquewhite;
+
+    }
+   .box{        
+        height:250px;
+        width:250px;
+        border: 1px solid black;
+        margin:2px;
+        padding:2px;
+    } 
+    #box1{
+        background-color:aqua;
+        
+    }
+    #box2{
+        background-color:brown ; 
+       
+    }
+    #box3{
+        background-color:blueviolet ;
+       
+    }
+    #box4{
+        background-color:blue ;          
+    }
+
+     @media (min-width:100px){
+            .container{
+                flex-direction: column;
+            }
+        }
+     @media (min-width:100px){
+            .container{
+                flex-direction: column;
+            }
+        }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+
+       
+</body>
+</html>

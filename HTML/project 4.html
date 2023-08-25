@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(197, 100, 189);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .left{
+            height: 300px;
+            width:350px;
+            padding: 40px;
+            background-image: linear-gradient(to right top, #330537, #5c094f, #890b62, #b90b71, #eb127a);
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .box1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+
+        }
+        .box2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+            font-size:smaller;
+
+        }
+        .right img{
+            height: 300px;
+            width:350px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="card"></div>
+        <div class="left">
+            <div class="text1">
+             <h2>Get insights that help your business grow</h2>
+             </br>
+             </br>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem amet explicabo, consectetur quaerat earum fugiat!</p>
+            </div>
+            </br>
+             </br>
+            <div class="text2">
+                <div class="box1">
+                    <h2>10K+</h2>
+                    <h2>214</h2>
+                    <h2>12M+</h2>
+                </div>
+                <div class="box2">
+                    <p>Comments</p>
+                    <p>Paid Users</p>
+                    <p>Views</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="icon.jpg"/>
+      </div>
+     </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+                                     <!--FLEXBOX-->
+   <style>
+    .container{
+        background-color: blanchedalmond;
+        border: 5px solid black;
+        margin:2px;
+        padding:2px;
+        display:flex;    /* by default it is row in direction*/
+       /* flex-direction: row-reverse; /* it will reverse the row*/
+        flex-direction: row;
+        /*flex-wrap: wrap; it ll wrap the content  */
+        height:700px;
+        /*justify-content: center;   /* horizontal(coz flex row is used) content in ceter */
+        align-items: stretch; /* for stretch remvoe height of box*/
+    }
+   .box{         /*used this box for vertical box allignment */
+    height:150px;
+        width:150px;
+        border: 1px solid black;
+        margin:2px;
+        padding:2px
+    }
+    #box1{
+        background-color:aqua;
+        flex-grow:5;      /* it will take more space as it is greater than other flex :grow*/
+        align-self: end;/* u can place the box anywhere u want */
+       
+        
+    }
+    #box2{
+        background-color:brown ; 
+        flex-shrink: 3;   /* it is used for shrinking the size of box  here 3 is the shrinking speed  of box  */
+       flex-grow:1;
+       
+    }
+    #box3{
+        background-color:blueviolet ;
+        flex-grow:1;
+       
+    }
+    #box4{
+        background-color:blue ;  
+        /*flex-grow:1;*/
+        flex-basis:400px;
+        align-self: center;
+
+        
+    }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

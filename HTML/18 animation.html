@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--ANIMATIONS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+       
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        
+        .box{
+            background-color: rgb(197, 100, 189);
+            border: 3px solid brown;
+            border-radius: 10px;
+            margin: 10px;
+            width: 350px;
+            height: 80px;
+            position: relative;/*bcoz of relative we can give it to top bottom anywhere we want*/
+            animation-name:rightMovement ;/*name of the animation*/
+            animation-duration: 5s;/*how much time will se an animation*/
+            animation-iteration-count: 2;   /*how much time will se an animation*/
+            animation-delay: 2s;  /*how many time will se an animation*/ 
+           /* animation-timing-function: linear; same all over animation-timing-function: ease; slow start then fast, slow end*/ 
+            animation-timing-function: cubic-bezier(1, -0.4, 1, 1);/* this is according to u works*/
+            animation-direction: alternate;/* it will return after touching left or right direction*/
+            animation-fill-mode: both;/* it will return back from ending*/
+            animation-play-state:running;
+        }
+
+        @keyframes rightMovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1350px;
+            }
+        }
+
+        #box2{
+            width: 350px;
+            height: 80px;
+            background-color: aqua;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s ease-in 1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement {
+            from {
+                top: 600px;
+                left: 1350px;
+            }
+
+            to {
+                top: 600px;/* if this will be 60 it will go in upward direction*/ 
+                left: 0;
+            }
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: peru;
+            border: 3px solid yellow;
+            border-radius: 50px;
+            margin: 10px;
+            top:10%;
+            left:675px;
+            position: relative;
+            animation: 5s ease-in-out 1s infinite alternate-reverse none running circleMovement;
+            
+        }
+        @keyframes circleMovement {
+            0%{
+                top: 0px;
+                left :5px;
+            }
+
+            30% {
+                top: 5px;
+                left: 100;
+            }
+            60%{
+                top: 50px;
+                left : 0px;
+            }
+
+            100% {
+                top: 70px;
+                left: 99;
+            }
+
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Heloooo</p>
+        </div>
+        <div id="box2"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

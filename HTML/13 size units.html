@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style> /*SIZE UNITS ,POWER of PX,%VW,VH,EM AND REM */
+   
+ .box{
+        border: 2px solid red;
+        width:50%;
+    }
+
+    .parent{
+        border: 1px solid green;
+        font-size: 1px;       
+       background-color: aqua;
+       width: 50%;;
+    }
+    .child{
+        border: 1px solid blue;
+        font-size: 10em;  /* its parent class is there so there will be no default 16 .it will use parent class size* child class and ll be size*/
+       background-color: yellow;
+       width:20%;
+    }
+    .container{ 
+        background-color: bisque;
+        border: 1px solid green;
+        height: 100vh; /*it will take all height of a page*/
+        width: 50vw;  /* it will take half width of a page*/
+    }
+    .box1{
+        border: 1px solid blue; 
+        font-size: 10em; /* em is by default 16px , it will be 160px*/
+    }
+    .hello{
+        border: 1px solid blue; 
+        font-size: 5rem;
+    }
+    </style>
+
+<div class="box">
+    welcome to css
+  </div>
+  <div class="parent">       
+  <div class="child">
+    CHILD
+  </div>        <!--child class is inserted in parent class so it will behave acc to parent class width-->  
+</div>
+  <div class="container">
+    welcome welcome
+  </div>
+
+  <div class="box1">Shruti Jha</div>
+
+  <p class="hello">hello hello</p>
+
+</body>
+</html>

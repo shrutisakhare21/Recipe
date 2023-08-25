@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!--BORDERS,HEIGHT,WIDTH,BOX MODEL,PADDING ,MARGIN,UNIVERSAL SELECTOR-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{                    /*it is a selector. USED to remove the default padding and margin */
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            background-color: aquamarine;
+            border-style:groove;
+            border-color:brown;
+            width: 400px; /*it will decrease width of border */
+            height: 150px;/*it will increase the height of the box*/
+            /*margin: 90px;space between two boxe*/
+           
+        }
+        span{  /* The <span> tag is an inline element in HTML, and by default, inline elements do not have dimensions like height and width.*/
+            background-color: aquamarine;
+            border-style: solid;
+            border-color:brown;
+            border-width: 2px;
+            width: 400px; 
+            height: 400px;
+
+           
+        }
+        .firstPara{
+            background-color: pink;
+            border-style: double;
+            border-top-left-radius: 18px; /*it will make border curved only in left side*/
+            border-width: 2px;
+            margin-top: 90px;
+           
+
+        
+        }
+        .secondPara{
+            padding:40px; /*it will increase the space between content and BORDER*/
+            background-color:paleturquoise;
+            border-style: inset;
+            border-radius: 18px;  /*  it will give a curved edge border*/
+            width: 400px;
+            margin-block: 90px; 
+            padding: 20px 50px;/*it will add 20 in upward and 50 in downward direction*/
+            box-sizing: border-box;
+
+
+
+
+        }
+        .thirdPara{
+            background-color: peru;
+            border-left: solid black 25px; /* it will make left side dark*/
+            width: 400px;
+            margin-inline: 90px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to HTML</h1>
+
+    <span>Welcome to Shruti's WEB DEV COURSE</span>
+
+    <p class="firstPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda pariatur neque porro architecto officia rem, ex minima ea. Vitae, laudantium.</p>
+
+    <p class="secondPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sed, ratione adipisci illum maxime ex rerum voluptatum? Aliquid nostrum, nobis, molestias amet consequuntur voluptatem temporibus quibusdam cupiditate porro praesentium eveniet.</p> 
+
+    <p class="thirdPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta veritatis nam deserunt laborum. Sapiente totam aliquid earum accusamus quae ipsa amet quaerat ex. Sequi optio ut error provident omnis tempora quaerat, natus nostrum maxime odit nihil repudiandae possimus rerum accusamus consectetur iusto vel eum ducimus recusandae? Minima dolorem assumenda blanditiis.</p>
+
+</body>
+</html>

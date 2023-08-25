@@ -1,0 +1,11 @@
+create database data;
+use data;
+create table B2(id int primary key,name varchar (20));
+show tables;
+insert into B2 values(1,'abc');
+insert into B2 values(5,'cdf');
+insert into B2 values(9,'xyz');
+insert into B2 values(2,'pqz');
+select* from B2;
+select avg(id)from b2;
+select sum(id) from b2;

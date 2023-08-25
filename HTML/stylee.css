@@ -1,0 +1,32 @@
+ .box{
+    width:400px;
+    height:400px;
+    background-color: aquamarine;
+    border: 2px solid black;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 2s linear 1s;/* when it is used it will slowly do the process*/
+ }
+
+ .container{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ p{
+    font-size:36px;
+ }
+
+ .box:hover{
+   /* transform:rotate(45deg)  it ll hover for 45 degree*/
+  /* transform:scale(2)   when u touch the box it will increase its size*/
+ /* transform: skew(45deg)  it will bent the box
+ transform: translate(10px, 500px);*/
+ transform: matrix();
+}
